@@ -80,9 +80,9 @@
 # not(var1 or var2 or.... varn) = (not var1) and (not var2) and (not var3)... and (not varn)
 # not(var1 and var2 and.... varn) = (not var1) or (not var2) or (not var3)... or (not varn)
 
-a = True
-b = True
-c = False
+# a = True
+# b = True
+# c = False
 
 # Same results (De Morgan's Law)
 # result = not (a or b or c)
@@ -92,6 +92,56 @@ c = False
 # result = not (a and b and c)
 # result = not a or not b or not c
 # print(result)
+
+# a = 20
+# b = 10
+# c = (a < b)# less(a,b) ->>> True if a is less than b, False otherwise
+
+# is a < b same as not (a > b)? --> no, because we may have the case when a == b
+
+# c = a <= b
+# is a <= b same as not (a >= b)? --> no, because we may have the case when a == b
+
+# a = 20
+# b = 21
+# c = (a != b)
+
+# is not (a == b) same as a != b? --> yes
+
+# print(c)
+
+# astr,bstr,cstr = input("Please, enter values a b c").split()
+
+# a = int(astr)
+# b = int(bstr)
+# c = int(cstr)
+
+# result = a > b and b < c and a > c
+# print("Sequence : b c a : " + str(result))
+
+# result = a > b and b < c and a < c
+# print("Sequence : b a c : " + str(result))
+
+# result = a > b and b > c
+# print("Sequence : c b a : " + str(result))
+
+# result = a < b and b > c and a > c
+# print("Sequence : c a b : " + str(result))
+
+# result = a < b and b > c and a < c
+# print("Sequence : a c b : " + str(result))
+
+# result = a < b and b < c
+# print("Sequence : a b c: " + str(result))
+
+# a = "aaa"
+# b = "aaaa"
+
+# c = b < a
+# print(c)
+
+#Janis Arturs Peteris Janis --- Janis > Arturs -->>> Arturs Janis Janis Peteris 
+
 
 
 
