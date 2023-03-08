@@ -2,8 +2,15 @@ age = int(input("Enter your age:"))
 hasDrivingLicense = "n" #default value
 if age > 17:
   hasDrivingLicense = input("Do you have a driving license (y/n)?")
-  
-result = hasDrivingLicense == "y" and age >= 18
+
+# result = hasDrivingLicense == "y" and age >= 18
+if hasDrivingLicense:
+  if age >= 18:
+    result = True
+  else:
+    result = False
+else:
+  result = False
 
 # if result:
 #   print("You are able to drive")
