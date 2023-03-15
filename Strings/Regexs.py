@@ -16,6 +16,7 @@ import re
 phoneInput = input("Enter the phone:\n")
 phonePattern = r'^((\+371|8)( ){0,1}){0,1}2[0-9]{7}$'
 match = re.search(phonePattern,phoneInput)
+
 if match:
     print("Pattern is correct")
 else:

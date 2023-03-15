@@ -21,3 +21,11 @@ print('Here is the\\n text')
 print(r"Here I use all the \n characters as \t the text \"")
 
 text = "Powerful person"#Powerful*person*
+text2 = "Powerful " + "person"
+print(text == text2)
+
+text = "Po"
+text2 = text
+text2 += "wer"
+print(text)
+print(text2)
