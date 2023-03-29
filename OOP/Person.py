@@ -22,8 +22,9 @@
 # print(pers2.last_name)
 # print(pers2.date_of_birth)
 from Additional.Date import Date
+from Obsolete import Obsolete
 
-class Person:
+class Person(Obsolete):
 
     species = "Homo sapiens"
     def __init__(self,name:str,last_name:str,date_of_birth:str,
