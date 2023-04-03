@@ -197,8 +197,7 @@ student_grades = lines[1:]
 student_grades.sort(key= lambda student:student[0])
 
 
-print(lines)
-# with open("Students_Grades.csv","w") as csvfile:
-#     writer = csv.writer(csvfile,delimiter=";")
-#     writer.writerow(lines[0])
-#     writer.writerows(student_grades)
+with open("Students_Grades.csv","w",newline="") as csvfile:
+    writer = csv.writer(csvfile,delimiter=";")
+    writer.writerow(lines[0])
+    writer.writerows(student_grades)
